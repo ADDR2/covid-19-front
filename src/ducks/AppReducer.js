@@ -28,12 +28,7 @@ export const clear = () => {
 
 export const fetchData = () => async dispatch => {
     try {
-        const options = {
-            headers: {
-                origin: 'https://www.arcgis.com',
-                referer: 'https://www.arcgis.com/apps/opsdashboard/index.html'
-            }
-        };
+        const options = {};
 
         const { data: { features } } = await axios.get(
             process.env.REACT_APP_FETCH_BY_COUNTRY,
