@@ -1,0 +1,67 @@
+@import '../styles/globals/colors';
+
+.country-item {
+    margin: 1rem;
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.country-name {
+    margin: 0;
+    color: $app-section-background-color;
+    font-size: 18px;
+}
+
+.country-values {
+    display: flex;
+    justify-content: space-between;
+}
+
+.country-value {
+    margin: 0.5rem 0;
+    color: $app-section-background-color;
+    font-size: 16px;
+
+    &.active > b {
+        color: $app-active-cases
+    }
+
+    &.confirmed > b {
+        color: $app-confirmed-cases;
+    }
+
+    &.recovered > b {
+        color: $app-recovered-cases;
+    }
+}
+
+.country-update {
+    margin: 0;
+    color: $app-section-background-color;
+    font-size: 14px;
+}
+
+.searcher {
+    position: sticky;
+    top: 0;
+}
+
+.searcher-icon {
+    position: absolute;
+    width: 1rem;
+    height: 20px;
+    top: 1rem;
+    left: 1.5rem;
+}
+
+.searcher-input {
+    width: calc(100% - 5rem);
+    border: none;
+    margin: 0 1rem;
+    padding: 1rem 1rem 1rem 2rem;
+    border-radius: 5px;
+    font-size: 18px;
+    outline: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}

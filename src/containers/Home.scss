@@ -1,0 +1,26 @@
+@import '../styles/globals/colors';
+
+.app-total-container {
+    margin: 1rem;
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.app-total-value {
+    margin: 0;
+    color: $app-section-background-color;
+    font-size: 22px;
+
+    &.active > b {
+        color: $app-active-cases
+    }
+
+    &.confirmed > b {
+        color: $app-confirmed-cases;
+    }
+
+    &.recovered > b {
+        color: $app-recovered-cases;
+    }
+}

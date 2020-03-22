@@ -1,0 +1,68 @@
+@import './styles/globals/colors';
+
+.app-header {
+  height: 4rem;
+  width: 100vw;
+  background-color: $app-section-background-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-title {
+  color: #D6D8DA;
+  width: max-content;
+  margin: 0;
+  font-size: 22px;
+}
+
+.app-content {
+  width: 100vw;
+  height: calc(100vh - 8rem);
+  overflow-y: auto;
+  overflow-x: hidden;
+  background-color: $app-content-background-color;
+}
+
+.app-footer {
+  height: 4rem;
+  width: 100vw;
+  background-color: $app-section-background-color;
+  display: flex;
+  align-items: center;
+}
+
+.footer-option {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color linear 200ms;
+
+  &.selected {
+    background-color: lighten($app-section-background-color, 15%);
+  }
+
+  &:not(.selected):hover {
+    background-color: lighten($app-section-background-color, 10%);
+  }
+
+  &:not(.selected):active {
+    background-color: lighten($app-section-background-color, 20%);
+  }
+}
+
+.option-icon {
+  margin: 3px 1rem 0 0;
+  font-size: 22px;
+  color: #D6D8DA;
+}
+
+.option-name {
+  margin: 0;
+  width: max-content;
+  color: #D6D8DA;
+  font-size: 22px;
+}
